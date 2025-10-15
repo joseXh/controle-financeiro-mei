@@ -1,0 +1,72 @@
+﻿Pseudocódigo
+
+
+INÍCIO
+
+
+    /* Variáveis pros valores financeiros
+    total ganhos = 0
+    total_despesas_realizadas = 0
+    total despesas _ futuras = 0
+    lucro = 0
+
+
+/*Menu pro usuário escolher qual função ele quer usar
+    REPETIR
+        EXIBIR "Menu:"
+        EXIBIR "1 - Adicionar ganho"
+        EXIBIR "2 - Adicionar despesa realizada"
+        EXIBIR "3 - Adicionar despesa futura"
+        EXIBIR "4 - Mostrar resumo financeiro"
+        EXIBIR "0 - Sair"
+        LER opcao
+
+
+/* Se o usuário quiser adicionar ganho
+        SE opcao = 1 ENTÃO
+            EXIBIR "Digite o valor do ganho:"
+            LER valor
+            total ganhos = total_ganhos + valor
+            EXIBIR "Ganho adicionado."
+
+
+/* Se o usuário quiser adicionar despesa
+        SENAO SE opcao = 2 ENTÃO
+            EXIBIR "Digite o valor da despesa realizada:"
+            LER valor
+            total_despesas_realizadas = total_despesas_realizadas + valor
+            EXIBIR "Despesa realizada adicionada."
+
+
+/* Se o usuário quiser adicionar despesa futura
+        SENAO SE opcao = 3 ENTÃO
+            EXIBIR "Digite o valor da despesa futura:"
+            LER valor
+            total_despesas_futuras = total_despesas_futuras + valor
+            EXIBIR "Despesa futura adicionada."
+
+
+/* Se o usuário quiser o resumo financeiro de todos os valores adicionados
+        SENAO SE opcao = 4 ENTÃO
+            lucro = total_ganhos - total_despesas_realizadas - total_despesas_futuras
+            EXIBIR "Resumo financeiro:"
+            EXIBIR "Ganhos totais: ", total_ganhos
+            EXIBIR "Despesas realizadas: ", total_despesas_realizadas
+            EXIBIR "Despesas futuras: ", total_despesas_futuras
+            EXIBIR "Lucro estimado: ", lucro
+
+
+/* Se o usuário quiser encerrar o sistema
+        SENAO SE opcao = 0 ENTÃO 
+            EXIBIR "Encerrando o sistema."
+
+
+/* Se o usuário digitar algum número inválido ele irá repetir até o usuário quiser encerrar o sistema
+        SENAO
+            EXIBIR "Opção inválida. Tente novamente."
+
+
+    ATÉ opcao = 0
+
+
+FIM
